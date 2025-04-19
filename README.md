@@ -5,7 +5,7 @@
 
 * Standardize Columns to be lower case and use _ between words instead of .
 * Clean out NA values
-** 288 NA out of 53940 rows
+     288 NA out of 53940 rows
 
 
 ## next section
