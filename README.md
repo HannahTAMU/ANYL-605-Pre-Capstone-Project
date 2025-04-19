@@ -12,4 +12,8 @@
 * Dropped rows where values were missing: out of 53,000 rows, the ones missing data was insignificant and therefore removed from analysis
 * Removed Outliers as they skew the analysis
 
+Data is now prepped and ready for Analysis
+![image](https://github.com/user-attachments/assets/8c586f0c-5853-4340-af16-320dea80c9f5)
+
+
 ## next section
