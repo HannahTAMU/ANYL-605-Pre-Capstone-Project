@@ -28,7 +28,14 @@ Possible solutions would be to combine length, width, and depth into a volume co
 
 Instead, we will go ahead with Ridge Regression and Lasso Regression to address the multicollinearity and determine the best fit model. 
 
+## Ridge Regression 
 
+
+
+## Lasso Regression
+
+
+## Best Model
 
 
 
