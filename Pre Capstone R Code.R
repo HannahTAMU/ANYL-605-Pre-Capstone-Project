@@ -55,17 +55,6 @@ diamonds <- diamonds %>%
 #Visualize width_mm v length_mm with sales_price as color
 library(ggplot2)
 
-ggplot(diamonds, aes(x = width_mm, y = length_mm, color = sales_price)) +
-  geom_point(alpha = 0.5) +
-  labs(
-    title = "Scatter Plot of Width vs Length Colored by Sales Price",
-    x = "Width (mm)",
-    y = "Length (mm)",
-    color = "Sales Price"
-  ) +
-  theme_minimal() +
-  scale_color_gradient(low = "blue", high = "red")
-
 ###Discovered entries where both width and length are coded as 0.00. These have prices 
 #and table and depth measurements however
 diamonds_missing_dimensions <- diamonds %>%
@@ -80,6 +69,16 @@ diamonds <- diamonds %>%
 summary(diamonds)
 #We no longer have any variables with values of 0 so we can proceed
 
+ggplot(diamonds, aes(x = width_mm, y = length_mm, color = sales_price)) +
+  geom_point(alpha = 0.5) +
+  labs(
+    title = "Scatter Plot of Width vs Length Colored by Sales Price",
+    x = "Width (mm)",
+    y = "Length (mm)",
+    color = "Sales Price"
+  ) +
+  theme_minimal() +
+  scale_color_gradient(low = "blue", high = "red")
 
 #boxplots Carat by Country of Origin
 ggplot(diamonds, aes(x = coo, y = carat)) +
@@ -104,7 +103,9 @@ linear_model <- lm(sales_price~carat+cut+color+clarity+depth+table+length_mm+wid
 summary(linear_model)
 AIC(linear_model) 
 vif(linear_model)
-
+r2_lm <- summary(linear_model)$r.squared
+rmse_lm <- RMSE(pred=predict(linear_model), obs=diamonds$sales_price)
+print(rmse_lm)
 
 #Ridge to handle colinearity
 # Create model matrix to expand factor levels into dummy variables
@@ -127,12 +128,6 @@ coef(ridge_reg, s = best_lambda)
 # Predicted values at best lambda
 pred_ridge <- predict(ridge_reg, s = best_lambda, newx = x_var)
 
-# R-squared
-SSE <- sum((y_var - pred_ridge)^2)
-SST <- sum((y_var - mean(y_var))^2)
-ridge_r2 <- 1 - SSE/SST
-ridge_r2
-
 # Using cross validation glmnet
 ridge_cv <- cv.glmnet(x_var, y_var, alpha = 0, lambda = lambda_seq)
 # Best lambda value
@@ -147,16 +142,14 @@ coef(best_ridge)
 # Make predictions using the fitted regression model
 predicted_Y <- predict(best_ridge, newx = x_var, s = best_lambda)
 # Compute RMSE
-RMSE_value <- sqrt(mean((y_var - predicted_Y)^2))
+RMSE_value_ridge <- sqrt(mean((y_var - predicted_Y)^2))
 # Print RMSE
-print(RMSE_value) # RSME = 1131.826
+print(RMSE_value_ridge)
 # Compute R^2
 SSE <- sum((Y - predicted_Y)^2)  # Sum of Squared Errors
 SST <- sum((Y - mean(Y))^2)      # Total Sum of Squares
-R2_value <- 1 - (SSE / SST)       # R^2 formula
-print(R2_value) #0.8857079
-
-
+R2_value_ridge <- 1 - (SSE / SST)       # R^2 formula
+print(R2_value_ridge)
 
 #Lasso to check collinearity and pick significant variables
 #Define the model equation and remove the 7th column Sales Price from matrix 
@@ -199,14 +192,25 @@ names(lasso.model)
 # Make predictions using the fitted Lasso model
 predicted_Y <- predict(lasso.model, newx = X, s = l.lasso.min)
 # Compute RMSE
-RMSE_value <- sqrt(mean((Y - predicted_Y)^2))
+RMSE_value_lasso <- sqrt(mean((Y - predicted_Y)^2))
 # Print RMSE
-print(RMSE_value) # RSME = 1131.826
+print(RMSE_value_lasso)
 # Compute R^2
 SSE <- sum((Y - predicted_Y)^2)  # Sum of Squared Errors
 SST <- sum((Y - mean(Y))^2)      # Total Sum of Squares
-R2_value <- 1 - (SSE / SST)       # R^2 formula
-print(R2_value)
+R2_value_lasso <- 1 - (SSE / SST)       # R^2 formula
+print(R2_value_lasso)
+
+#Compare Models 
+models_compared <- # Create the dataframe
+  results_df <- data.frame(
+    Metric = c("R^2", "RMSE"),
+    `Linear Regression` = c(r2_lm, rmse_lm),
+    `Ridge Regression` = c(R2_value_ridge, RMSE_value_ridge),
+    `Lasso Regression` = c(R2_value_lasso, RMSE_value_lasso),
+    check.names = FALSE  # Prevents conversion of column names with spaces
+  )
+print(models_compared)
 
 
 #Investigate the relative strength of Italy, Netherlands, India
