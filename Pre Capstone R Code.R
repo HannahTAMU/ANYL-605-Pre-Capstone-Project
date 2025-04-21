@@ -11,6 +11,8 @@ install.packages("caret")
 library(caret)
 install.packages("glmnet")
 library(glmnet)
+install.packages("ggplot2")
+libarary(ggplot2)
 
 diamonds <- read.csv("C:/Users/nlwym/OneDrive/Desktop/A&M MS ANALYTICS/605 Data Visualization/PreCapstone/SD Data.csv", header = TRUE)
 
