@@ -7,6 +7,10 @@ install.packages("dplyr")
 library (dplyr)
 install.packages("car") 
 library (car)
+install.packages("caret")
+library(caret)
+install.packages("glmnet")
+library(glmnet)
 
 diamonds <- read.csv("C:/Users/nlwym/OneDrive/Desktop/A&M MS ANALYTICS/605 Data Visualization/PreCapstone/SD Data.csv", header = TRUE)
 
