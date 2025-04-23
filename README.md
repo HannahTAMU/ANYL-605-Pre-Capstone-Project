@@ -30,7 +30,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 
 ## Ridge Regression 
 
-* best lambda for ridge regression
+* best lambda for ridge regression<br>
 ![image](https://github.com/user-attachments/assets/38cba595-21b5-4a51-93ae-b006dcb5d4a0)
 
 * coefficient values
