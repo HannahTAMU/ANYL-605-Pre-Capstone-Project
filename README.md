@@ -97,7 +97,7 @@ We have tried weighted least squares and log transformations without success. Ho
 * R-sq<br>
 ![image](https://github.com/user-attachments/assets/1e35098e-5c42-4135-b6e7-ca8f7be4136a)
 
-* Optimal Values:
+* Optimal Values:<br>
 ![image](https://github.com/user-attachments/assets/55687034-f590-4131-aaf7-73b1ded02c6c)
 
 * Carat (9653.46) and carat^2 (-2045.57):
@@ -112,6 +112,9 @@ We have tried weighted least squares and log transformations without success. Ho
 * depth_mm (-4544.11) and depth_mm^2 (532.33)
   * Negative depth and positive depth^2 indicates a minimum value of 4.27 mm.
   * Sales will decrease as depth_mm increases to the minimum value but will increase once depth_mm surpasses the minimum value.
+
+Optimal combination: <br>
+Carat = 2.357, length_mm > 7.96 mm, width_mm > 2.78 mm, depth_mm > 4.27 mm
 
 
 ## 2f. What specific strategies you suggest such that they can increase the sales?
