@@ -66,8 +66,8 @@ Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, 
 
 Heterscedasticity occurs in the data. 
 
-![image](https://github.com/user-attachments/assets/965f10b3-8bea-481c-97d2-1d33de5de5bd)
-![image](https://github.com/user-attachments/assets/5e211983-361e-4c5b-ac38-4f273af3fb42)
+![image](https://github.com/user-attachments/assets/38a7d90c-e69c-4120-92fc-6bec77481182)
+
 
 
 
