@@ -57,11 +57,11 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 
 ## Best Model
 
-* Lasso RMSE and R^2
+* Lasso RMSE and R^2<br>
   ![image](https://github.com/user-attachments/assets/85eacd07-096b-42d8-affe-c0528b1e85db)
   ![image](https://github.com/user-attachments/assets/0f1fe3d4-5709-46c6-ad44-bbf31e060662)
   
-* Rdige RMSE and R^2
+* Rdige RMSE and R^2<br>
   ![image](https://github.com/user-attachments/assets/6e65b24a-8df4-4d86-bb59-62e9544aba6e)
   ![image](https://github.com/user-attachments/assets/f94ec5b2-e87b-4eaa-9836-dadec2126f88)
 
