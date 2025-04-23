@@ -29,12 +29,6 @@ diamonds<-na.omit(diamonds)
 dim(diamonds)
 
 
-# Check their unique values
-for (col in char_cols) {
-  cat("\nLevels of", col, ":\n")
-  print(levels(diamonds[[col]]))
-}
-
 #EXPLORING PROMOTION
 print(levels(diamonds$promotion))
 unique(diamonds$promotion)
