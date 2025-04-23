@@ -194,3 +194,10 @@ SST_lasso <- sum((Y - mean(Y))^2)  # Total Sum of Squares
 R2_lasso <- 1 - (SSE_lasso / SST_lasso)  
 print(R2_lasso)  # R² 0.9213822
 
+# Concatenate results into a table-like structure
+ridge_output <- paste("Ridge Regression | RMSE:", RMSE_value_ridge, "| R²:", R2_value_ridge)
+lasso_output <- paste("Lasso Regression | RMSE:", RMSE_value_lasso, "| R²:", R2_lasso)
+
+# Print results
+cat(ridge_output, "\n")
+cat(lasso_output, "\n")
