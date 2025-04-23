@@ -89,10 +89,17 @@ We have tried weighted least squares and log transformations without success. Ho
 ## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
 
 * Coefficients with quadratic terms<br>
-![image](https://github.com/user-attachments/assets/b8fca5d0-ef76-4694-8e31-5b47c7918a9b)
+![image](https://github.com/user-attachments/assets/be734747-56d0-4a04-8bf9-d3927591fee9)
+
+* RMSE<br>
+![image](https://github.com/user-attachments/assets/93448852-645b-45c6-b814-bcb16c588693)
+
+* R-sq<br>
+![image](https://github.com/user-attachments/assets/1e35098e-5c42-4135-b6e7-ca8f7be4136a)
+
 
 * Carat:
-* * test
+  * Positive Carat with negative carat^2 indicates there is an optimal carat size.
 
 
 ## 2f. What specific strategies you suggest such that they can increase the sales?
