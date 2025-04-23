@@ -290,3 +290,24 @@ ridge_lm <- lm(sales_price ~ carat + I(carat^2) + cut + color + clarity +
                  depth_mm + I(depth_mm^2) + table + coo + online + promotion, data = diamonds)
 
 bptest(ridge_lm)  # p-value < 0.05 → heteroscedasticity exists
+
+# get min and max values
+
+# Extract coefficients from the ridge regression model
+coefficients <- coef(best_ridge)
+print(rownames(coefficients))  # View all coefficient names
+
+# Identify quadratic terms
+quadratic_terms <- coefficients[grep("\\^2", rownames(coefficients)), ]
+print(quadratic_terms)
+
+# Identify only linear terms explicitly (avoid quadratic terms)
+linear_terms <- coefficients[rownames(coefficients) %in% c("carat", "length_mm", "width_mm", "depth_mm"), ]
+print(linear_terms)
+
+# Compute the optimal values for each quadratic equation
+optimal_values <- -linear_terms / (2 * quadratic_terms)
+
+# Print results
+print("Optimal values for quadratic features:")
+print(optimal_values)
