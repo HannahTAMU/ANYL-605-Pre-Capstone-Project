@@ -69,7 +69,26 @@ Heterscedasticity occurs in the data.
 ![image](https://github.com/user-attachments/assets/38a7d90c-e69c-4120-92fc-6bec77481182)
 
 
+## 2a. What drives consumers to pay a higher price for a specific piece of diamond?
 
 
+
+## 2b. Can a specific characteristic of a diamond may have a negative impact on consumers’ willingness to play?
+
+
+
+## 2c. Should they change geographical sourcing decisions?
+
+
+
+## 2d. How should they plan for distribution in future?
+
+
+
+## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
+
+
+
+## 2f. What specific strategies you suggest such that they can increase the sales?
 
 
