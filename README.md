@@ -35,13 +35,13 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 ![image](https://github.com/user-attachments/assets/38cba595-21b5-4a51-93ae-b006dcb5d4a0)
 
 * coefficient values
-![image](https://github.com/user-attachments/assets/f68d8696-a6b9-4186-9964-cff72f6844f1)
+![image](https://github.com/user-attachments/assets/02327f16-96e7-468d-b91a-5a744666909b)
 
-* RMSE for Model Comparison
-![image](https://github.com/user-attachments/assets/f94ec5b2-e87b-4eaa-9836-dadec2126f88)
+* RMSE for Model Comparison<br>
+![image](https://github.com/user-attachments/assets/a7a846ba-2218-466b-a294-032e2d91ef86)
 
 * R^2<br>
-![image](https://github.com/user-attachments/assets/6e65b24a-8df4-4d86-bb59-62e9544aba6e)
+![image](https://github.com/user-attachments/assets/7cd8aeb7-84d9-4b5d-81d7-eabb415f88c8)
 
 
 ## Lasso Regression
