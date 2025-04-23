@@ -89,7 +89,7 @@ We have tried weighted least squares and log transformations without success. Ho
 ## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
 
 * Coefficients with quadratic terms<br>
-![image](https://github.com/user-attachments/assets/be734747-56d0-4a04-8bf9-d3927591fee9)
+![image](https://github.com/user-attachments/assets/541c7fd9-724c-49ff-b7c4-2dd1f7fe8b20)
 
 * RMSE<br>
 ![image](https://github.com/user-attachments/assets/93448852-645b-45c6-b814-bcb16c588693)
@@ -97,9 +97,21 @@ We have tried weighted least squares and log transformations without success. Ho
 * R-sq<br>
 ![image](https://github.com/user-attachments/assets/1e35098e-5c42-4135-b6e7-ca8f7be4136a)
 
+* Optimal Values:
+![image](https://github.com/user-attachments/assets/55687034-f590-4131-aaf7-73b1ded02c6c)
 
-* Carat:
-  * Positive Carat with negative carat^2 indicates there is an optimal carat size.
+* Carat (9653.46) and carat^2 (-2045.57):
+  * Positive carat with negative carat^2 indicates there is an optimal carat weight. The optimal weight is 2.359606
+  * Sales will increase as carat weight increases towards the optimal value but will decrease as it surpasses the optimal value.
+* Length_mm (-4380.84) and length_mm^2 (275.24)
+  * Negative length and positive length^2 indicates a minimum value of 7.96 mm.
+  * Sales will decrease as length_mm increases to the minimum value but will increase once length_mm surpasses the minimum value.
+* width_mm (-2457.99) and width_mm^2 (442.63)
+  * Negative width and positive width^2 indicates a minimum value of 2.78 mm.
+  * Sales will decrease as width_mm increases to the minimum value but will increase once width_mm surpasses the minimum value.
+* depth_mm (-4544.11) and depth_mm^2 (532.33)
+  * Negative depth and positive depth^2 indicates a minimum value of 4.27 mm.
+  * Sales will decrease as depth_mm increases to the minimum value but will increase once depth_mm surpasses the minimum value.
 
 
 ## 2f. What specific strategies you suggest such that they can increase the sales?
