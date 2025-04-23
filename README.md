@@ -58,8 +58,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 
 ## Best Model
 
-![image](https://github.com/user-attachments/assets/3d5c4148-c66b-4df4-a397-b438ba7e2acf)
-
+![image](https://github.com/user-attachments/assets/c09d7ece-f22e-4fd2-a099-3e2a304c539e)
 
 Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, and Linear Regression, we should select the model that handles the collinearity and provides the most insight in terms of significant variables. The ___ model delivers on both of those criteria. 
 
