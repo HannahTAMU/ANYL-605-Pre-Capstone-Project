@@ -117,7 +117,7 @@ AIC(model_price)
 ################################################################################
 
 ### Ridge Regression ###
-set.seed(1234)
+set.seed(123)
 # Create model matrix to expand factor levels into dummy variables
 x_var <- model.matrix(sales_price ~ .,data = diamonds)  # Remove intercept column
 y_var <- diamonds$sales_price
@@ -149,12 +149,12 @@ predicted_Y <- predict(best_ridge, newx = x_var, s = best_lambda)
 # Compute RMSE
 RMSE_value <- sqrt(mean((y_var - predicted_Y)^2))
 # Print RMSE
-print(RMSE_value) # RSME = 1106.929
+print(RMSE_value) # RSME = 1117.64
 
 ################################################################################
 
 ### LASSO REGRESSION ###
-set.seed(1234)
+set.seed(123)
 
 X <- model.matrix(sales_price ~ .,data = diamonds)  # Remove intercept column
 Y <- diamonds$sales_price
