@@ -45,12 +45,27 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 
 ## Lasso Regression
 
+* coefficient values
+![image](https://github.com/user-attachments/assets/cf402559-cb69-4153-ab1f-b1da1a61da7d)
+
+* RMSE for Model Comparison
+![image](https://github.com/user-attachments/assets/0f1fe3d4-5709-46c6-ad44-bbf31e060662)
+
+* R^2<br>
+![image](https://github.com/user-attachments/assets/85eacd07-096b-42d8-affe-c0528b1e85db)
+
 
 ## Best Model
-![image](https://github.com/user-attachments/assets/c60fa380-c8d3-4196-a54d-b38a2c7c9242)
 
+* Lasso RMSE and R^2
+  ![image](https://github.com/user-attachments/assets/85eacd07-096b-42d8-affe-c0528b1e85db)
+  ![image](https://github.com/user-attachments/assets/0f1fe3d4-5709-46c6-ad44-bbf31e060662)
+  
+* Rdige RMSE and R^2
+  ![image](https://github.com/user-attachments/assets/6e65b24a-8df4-4d86-bb59-62e9544aba6e)
+  ![image](https://github.com/user-attachments/assets/f94ec5b2-e87b-4eaa-9836-dadec2126f88)
 
-Given the RSMEs are incredible close as are the R^2 values of the Lasso and Linear Regression, we should select the model that handles the collinearity and provides the most insight in terms of significant variables. The Lasso model delivers on both of those criteria. 
+Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, and Linear Regression, we should select the model that handles the collinearity and provides the most insight in terms of significant variables. The ___ model delivers on both of those criteria. 
 
 
 
