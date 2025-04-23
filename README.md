@@ -48,7 +48,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 * coefficient values
 ![image](https://github.com/user-attachments/assets/cf402559-cb69-4153-ab1f-b1da1a61da7d)
 
-* RMSE for Model Comparison
+* RMSE for Model Comparison<br>
 ![image](https://github.com/user-attachments/assets/0f1fe3d4-5709-46c6-ad44-bbf31e060662)
 
 * R^2<br>
