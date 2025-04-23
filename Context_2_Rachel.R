@@ -107,7 +107,7 @@ print(vif_values)
 
 ### Highly correlated: width, depth, length with carat - drop length width and depth_mm
 
-# Fit the multiple linear regression model with volume instead of individual dimensions
+# Fit the linear regression model with only carat instead of individual dimensions
 model_price <- lm(sales_price ~ carat + cut + color + clarity + depth + table + coo + online + promotion, data = diamonds)
 vif(model_price)
 AIC(model_price)
