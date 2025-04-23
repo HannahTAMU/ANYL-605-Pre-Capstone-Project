@@ -25,13 +25,14 @@ diamonds <- read.csv("C:/Users/rache/OneDrive - Texas A&M University/MS Analytic
 ### DATA CLEANING ###
 
 # Clean column names
-names(diamond)
+names(diamonds)
 diamonds <- clean_names(diamonds)
 
 # Remove NA values
 sum(is.na(diamonds)) #288 NAs
 dim(diamonds) #53940 rows
 diamonds <- na.omit(diamonds)
+dim(diamonds) # 53907 - dropped 33 rows
 
 ### EXPLORING PROMOTION ###
 
@@ -41,6 +42,7 @@ sum(diamonds$promotion == "") #3320 entries with ""
 # Trim extra spaces and remove blank entries
 diamonds$promotion <- trimws(diamonds$promotion)
 diamonds <- diamonds %>% filter(promotion != "")
+unique(diamonds$promotion) # only Yes and No now
 
 ### Exploring Dimensions ###
 
@@ -80,9 +82,9 @@ ggplot(diamonds, aes(x = coo, y = carat)) +
 
 ### Convert Character Columns to Factors ###
 # Convert categorical variables to factors
-diamonds$cut <- factor(diamonds$cut, levels = c("Fair", "Good", "Very Good", "Premium", "Ideal"), ordered = TRUE)
-diamonds$color <- factor(diamonds$color, levels = c("J", "I", "H", "G", "F", "E", "D"), ordered = TRUE)
-diamonds$clarity <- factor(diamonds$clarity, levels = c("I1", "SI2", "SI1", "VS2", "VS1", "VVS2", "VVS1", "IF"), ordered = TRUE)
+diamonds$cut <- factor(diamonds$cut, levels = c("Fair", "Good", "Very Good", "Premium", "Ideal"))
+diamonds$color <- factor(diamonds$color, levels = c("J", "I", "H", "G", "F", "E", "D"))
+diamonds$clarity <- factor(diamonds$clarity, levels = c("I1", "SI2", "SI1", "VS2", "VS1", "VVS2", "VVS1", "IF"))
 diamonds$coo <- factor(diamonds$coo)
 diamonds$online <- factor(diamonds$online)
 diamonds$promotion <- factor(diamonds$promotion)
@@ -107,7 +109,7 @@ print(vif_values)
 
 ### Highly correlated: width, depth, length with carat - drop length width and depth_mm
 
-# Fit the linear regression model with only carat instead of individual dimensions
+# Fit the multiple linear regression model with volume instead of individual dimensions
 model_price <- lm(sales_price ~ carat + cut + color + clarity + depth + table + coo + online + promotion, data = diamonds)
 vif(model_price)
 AIC(model_price)
@@ -151,6 +153,12 @@ RMSE_value <- sqrt(mean((y_var - predicted_Y)^2))
 # Print RMSE
 print(RMSE_value) # RSME = 1117.64
 
+# Compute R^2
+SSE <- sum((Y - predicted_Y)^2)  # Sum of Squared Errors
+SST <- sum((Y - mean(Y))^2)      # Total Sum of Squares
+R2_value_ridge <- 1 - (SSE / SST)       # R^2 formula
+print(R2_value_ridge)
+
 ################################################################################
 
 ### LASSO REGRESSION ###
@@ -179,7 +187,7 @@ predicted_Y <- predict(lasso.model, newx = X, s = l.lasso.min)
 # Compute RMSE
 RMSE_value <- sqrt(mean((Y - predicted_Y)^2))
 # Print RMSE
-print(RMSE_value) # RSME = 1109.635
+print(RMSE_value) # RSME = 1118.24
 
 
 
