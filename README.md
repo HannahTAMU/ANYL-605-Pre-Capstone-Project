@@ -34,7 +34,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 * best lambda for ridge regression<br>
 ![image](https://github.com/user-attachments/assets/38cba595-21b5-4a51-93ae-b006dcb5d4a0)
 
-* coefficient values
+* coefficient values<br>
 ![image](https://github.com/user-attachments/assets/02327f16-96e7-468d-b91a-5a744666909b)
 
 * RMSE for Model Comparison<br>
