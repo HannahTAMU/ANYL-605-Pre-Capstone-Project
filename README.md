@@ -39,7 +39,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 * RMSE for Model Comparison
 ![image](https://github.com/user-attachments/assets/f94ec5b2-e87b-4eaa-9836-dadec2126f88)
 
-* R^2
+* R^2<br>
 ![image](https://github.com/user-attachments/assets/6e65b24a-8df4-4d86-bb59-62e9544aba6e)
 
 
