@@ -13,7 +13,8 @@
 * Removed Outliers as they skew the analysis
 
 Data is now prepped and ready for Analysis
-![image](https://github.com/user-attachments/assets/8c586f0c-5853-4340-af16-320dea80c9f5)
+![image](https://github.com/user-attachments/assets/0068cfcc-b323-4b1f-91d6-24ef4b8188d3)
+
 
 
 ## Linear Regression
