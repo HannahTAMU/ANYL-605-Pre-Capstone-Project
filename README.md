@@ -72,7 +72,32 @@ We have tried weighted least squares, log transformations, and ridge with quadra
 
 ## 2a. What drives consumers to pay a higher price for a specific piece of diamond?
 
+* Carat weight (11524.36) is the most influential factor
+  * Carat has the strongest positive effect on sales price.
+  * Larger diamonds command higher prices, although diminishing returns may exist at extreme carat values.
+ 
+* Cut (base = fair)
+  * Ideal (+772.37) > Premium (+722.41) > Very Good (+650.61) > Good (+514.04)
+  * Higher-rated cutes increase price. The better the cut, the higher the price. Ideal cuts maximize brilliance and attract more consumer demand.
 
+* Diamond Color (base = J (worst))
+  * D (+2353.03) > E (+2152.12) > F (+2099.41) > G (+1893.37) > H (1392.14) > I (904.64)
+  * Premimum colors significanly increase price. Consumers prefer colorless diamonds.
+
+* Clarity
+
+* Dimensions mm
+
+* Depth
+
+* table
+
+* Country of Origin
+
+* Online
+
+* Promotion
+ 
 
 ## 2b. Can a specific characteristic of a diamond may have a negative impact on consumers’ willingness to play?
 
