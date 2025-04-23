@@ -34,7 +34,7 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 ![image](https://github.com/user-attachments/assets/38cba595-21b5-4a51-93ae-b006dcb5d4a0)
 
 * coefficient values
-![image](https://github.com/user-attachments/assets/aad82ca7-064c-47a9-9e99-4e4cb9b7bb6e)
+![image](https://github.com/user-attachments/assets/f68d8696-a6b9-4186-9964-cff72f6844f1)
 
 * RMSE for Model Comparison
 ![image](https://github.com/user-attachments/assets/f94ec5b2-e87b-4eaa-9836-dadec2126f88)
