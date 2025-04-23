@@ -229,3 +229,64 @@ ggplot(data = data.frame(predicted_Y, residuals_lasso), aes(x = predicted_Y, y =
   theme_minimal()
 
 ################################################################################
+
+### Ridge Regression with quadratic terms ###
+
+set.seed(123)
+# Create model matrix to expand factor levels into dummy variables
+x_var <- model.matrix(sales_price ~ carat + I(carat^2) + cut + color + clarity + length_mm + I(length_mm^2)+ 
+                        width_mm + I(width_mm^2) + depth_mm + I(depth^2) + depth + table + coo + online + promotion,data = diamonds)
+y_var <- diamonds$sales_price
+
+# Define lambda range
+lambda_seq <- 10^seq(2, -2, by = -0.1)
+
+# Run ridge regression (alpha = 0 means ridge)
+ridge_reg <- glmnet(x_var, y_var, alpha = 0, lambda = lambda_seq)
+summary(ridge_reg)
+
+# Cross Validation to find best lambda
+ridge_cv <- cv.glmnet(x_var, y_var, alpha = 0, lambda = lambda_seq)
+best_lambda <- ridge_cv$lambda.min 
+best_lambda
+# 0.01
+
+#Best Model 
+best_model <- ridge_cv$glmnet.fit 
+head(best_model)
+
+# Rebuilding the model with optimal lambda value 
+best_ridge <- glmnet(x_var, y_var, alpha = 0, lambda =best_lambda) 
+coef(best_ridge)
+
+#Calculate RSME
+# Make predictions using the fitted regression model
+predicted_Y <- predict(best_ridge, newx = x_var, s = best_lambda)
+# Compute RMSE
+RMSE_value_ridge <- sqrt(mean((y_var - predicted_Y)^2))
+# Print RMSE
+print(RMSE_value_ridge) 
+
+# Compute R^2
+SSE <- sum((y_var - predicted_Y)^2)  # Sum of Squared Errors
+SST <- sum((y_var - mean(y_var))^2)      # Total Sum of Squares
+R2_value_ridge <- 1 - (SSE / SST)       # R^2 formula
+print(R2_value_ridge)
+
+# Compute residuals
+residuals_ridge <- y_var - predicted_Y
+
+ggplot(data = data.frame(predicted_Y, residuals_ridge), aes(x = predicted_Y, y = residuals_ridge)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red") +  # Linear smoothing instead of loess
+  labs(title = "Ridge Residual Plot", x = "Predicted Sales Price", y = "Residuals") +
+  theme_minimal()
+
+library(lmtest)
+
+# Approximate model for heteroscedasticity testing
+ridge_lm <- lm(sales_price ~ carat + I(carat^2) + cut + color + clarity + 
+                 length_mm + I(length_mm^2) + width_mm + I(width_mm^2) + 
+                 depth_mm + I(depth_mm^2) + table + coo + online + promotion, data = diamonds)
+
+bptest(ridge_lm)  # p-value < 0.05 → heteroscedasticity exists
