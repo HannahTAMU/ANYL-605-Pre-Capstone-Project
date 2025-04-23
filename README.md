@@ -62,6 +62,14 @@ Instead, we will go ahead with Ridge Regression and Lasso Regression to address 
 
 Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, and Linear Regression, we should select the model that handles the collinearity and provides the most insight in terms of significant variables. The ___ model delivers on both of those criteria. 
 
+## Challenges:
+
+Heterscedasticity occurs in the data. 
+
+![image](https://github.com/user-attachments/assets/965f10b3-8bea-481c-97d2-1d33de5de5bd)
+![image](https://github.com/user-attachments/assets/5e211983-361e-4c5b-ac38-4f273af3fb42)
+
+
 
 
 
