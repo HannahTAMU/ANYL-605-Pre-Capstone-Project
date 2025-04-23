@@ -154,8 +154,8 @@ RMSE_value <- sqrt(mean((y_var - predicted_Y)^2))
 print(RMSE_value) # RSME = 1117.64
 
 # Compute R^2
-SSE <- sum((Y - predicted_Y)^2)  # Sum of Squared Errors
-SST <- sum((Y - mean(Y))^2)      # Total Sum of Squares
+SSE <- sum((y_var - predicted_Y)^2)  # Sum of Squared Errors
+SST <- sum((y_var - mean(y_var))^2)      # Total Sum of Squares
 R2_value_ridge <- 1 - (SSE / SST)       # R^2 formula
 print(R2_value_ridge)
 
