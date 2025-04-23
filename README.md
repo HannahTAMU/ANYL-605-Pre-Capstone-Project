@@ -88,6 +88,9 @@ We have tried weighted least squares and log transformations without success. Ho
 
 ## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
 
+* Coefficients with quadratic terms<br>
+![image](https://github.com/user-attachments/assets/b8fca5d0-ef76-4694-8e31-5b47c7918a9b)
+
 
 
 ## 2f. What specific strategies you suggest such that they can increase the sales?
