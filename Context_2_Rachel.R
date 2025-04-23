@@ -189,39 +189,8 @@ RMSE_value <- sqrt(mean((Y - predicted_Y)^2))
 # Print RMSE
 print(RMSE_value) # RSME = 1118.24
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SSE_lasso <- sum((Y - predicted_Y)^2)  # Residual Sum of Squares
+SST_lasso <- sum((Y - mean(Y))^2)  # Total Sum of Squares
+R2_lasso <- 1 - (SSE_lasso / SST_lasso)  
+print(R2_lasso)  # R² 0.9213822
 
