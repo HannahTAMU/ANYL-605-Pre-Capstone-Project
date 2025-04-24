@@ -96,7 +96,23 @@ It is important to note that higher-priced diamonds may be influenced by factors
 
 ## 2b. Can a specific characteristic of a diamond may have a negative impact on consumers’ willingness to play?
 
+Yes. Certain characteristics of a diamond can have a negative impact on consumers' willingness to pay. Some have stronger and weaker impacts.
 
+* Dimensions (mm)
+  * Length mm (-1023.26)
+    * Moderate negative influence on price. Excessive length is negatively associated with price.
+  * Depth mm (-2102.15)
+    * Strong negative influnce on price.
+    * As depth increases by one unit, price will decrease by 2102.15
+
+
+Other variables have negative impact on a customer's willingness to pay however it is very slight. 
+* table (-25.64)
+* Country of origin (base = Brazil)
+  * Cuba (-29.11)
+  * Sweden (-1.35)
+* Promotion (base = No)
+  * Yes (-6.97)
 
 ## 2c. Should they change geographical sourcing decisions?
 
