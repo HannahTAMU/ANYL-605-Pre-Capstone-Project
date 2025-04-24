@@ -111,7 +111,10 @@ The impact of country of origin on price is relatively small. However, there are
 
 ## 2d. How should they plan for distribution in future?
 
-
+* Optimize digital presence
+  * Online Listings (+3.84) have a slight positive effect that suggests online sales do not hurt pricing.
+* Be cautious with promotions
+  * Promotional Pricing (-6.97) has a slight negative effect. Careful discounting strategies are needed to avoid undermining perceived value.
 
 ## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
 
