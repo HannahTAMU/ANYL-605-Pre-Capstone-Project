@@ -81,22 +81,17 @@ It is important to note that higher-priced diamonds may be influenced by factors
   * Higher-rated cutes increase price. The better the cut, the higher the price. Ideal cuts maximize brilliance and attract more consumer demand.
 
 * Diamond Color (base = J (worst))
-  * D (+2353.03) > E (+2152.12) > F (+2099.41) > G (+1893.37) > H (1392.14) > I (904.64)
+  * D (+2353.03) > E (+2152.12) > F (+2099.41) > G (+1893.37) > H (+1392.14) > I (+904.64)
   * Premimum colors significanly increase price. Consumers prefer colorless diamonds.
 
-* Clarity
+* Clarity (base = I1 (worst))
+  * IF (Internally Flawless) (+5252.47) > VVS1 (+4933.09) > VVS2 (+4898.15) > VS1 (+4523.54) > VS2 (+4220.27) > SI1 (+3624.15) > SI2 (+2674.31)
+  * Major Pricing Factor
+  * Higher Clarity = Higher Price
 
-* Dimensions mm
-
-* Depth
-
-* table
-
-* Country of Origin
-
-* Online
-
-* Promotion
+* Dimensions Width mm (+1170.97)
+  * Strong positive influence on price
+  * Increasing width will increase price
  
 
 ## 2b. Can a specific characteristic of a diamond may have a negative impact on consumers’ willingness to play?
