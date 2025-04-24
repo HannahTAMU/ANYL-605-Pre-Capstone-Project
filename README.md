@@ -23,7 +23,7 @@ Multicollinearity exists in the linear regression model.
 
 ![image](https://github.com/user-attachments/assets/45aecd46-14d5-42f7-bc7f-a063e2688191)
 
-It is unsurprising that carat, length_mm, width_mm, and depth_mm are all highly correlated as there is most likely a strong connection between the sizes. 
+It is unsurprising that carat, length_mm, width_mm, and depth_mm are all highly correlated as there carat is a product of the dimensions.
 
 Possible solutions would be to combine length, width, and depth into a volume column or drop them completely and only use carat as that is usually the reference to diamond sizing. However, running a linear regression analysis with the volume variable still shows high VIF values and correlation with Carat, and the model with the variables dropped completely has an increase in the AIC value.
 
