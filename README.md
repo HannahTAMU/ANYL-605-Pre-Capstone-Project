@@ -64,7 +64,7 @@ Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, 
 
 ## Challenges:
 
-Heteroscedasticity is present in the data, and despite applying various corrective techniques—including weighted least squares, log transformations, and ridge regression with quadratic terms, it remains unresolved. Additionally, even when restricting the model to only carat while excluding width, length, and depth (mm), heteroscedasticity persisted. However, the primary variation occurs at higher price points, where data is sparse. Given that the model’s results align with logical expectations, showing that higher quality diamonds correspond to higher prices, we can confidently proceed with the analysis, as it still provides meaningful insights.
+Heteroscedasticity is present in the data, and despite applying various corrective techniques, including weighted least squares, log transformations, and ridge regression with quadratic terms, it remains unresolved. Additionally, even when restricting the model to only carat while excluding width, length, and depth (mm), heteroscedasticity persisted. However, the primary variation occurs at higher price points, where data is sparse. Given that the model’s results align with logical expectations, showing that higher quality diamonds correspond to higher prices, we can confidently proceed with the analysis, as it still provides meaningful insights.
 
 ![image](https://github.com/user-attachments/assets/38a7d90c-e69c-4120-92fc-6bec77481182)
 
