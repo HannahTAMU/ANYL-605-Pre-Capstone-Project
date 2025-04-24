@@ -65,7 +65,7 @@ Given the RSMEs are incredible close as are the R^2 values of the Lasso, Ridge, 
 ## Challenges:
 
 Heterscedasticity occurs in the data. 
-We have tried weighted least squares, log transformations, and ridge with quadratic without success of eliminating heterscedasticity. However, because the only real difference is seen with higher prices, $30,000 and above, and there are fewer data points at this extreme, we will continue with analysis.
+We have tried weighted least squares, log transformations, and ridge with quadratic without success of eliminating heterscedasticity. However, the only real difference is seen with higher prices where there are fewer data points at this extreme. Since the results of the models still make sense, higher quality equals higher price, then we can still continue with analysis as we derive adequate information from the model. 
 
 ![image](https://github.com/user-attachments/assets/38a7d90c-e69c-4120-92fc-6bec77481182)
 
