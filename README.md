@@ -105,18 +105,9 @@ Yes. Certain characteristics of a diamond can have a negative impact on consumer
     * Strong negative influnce on price.
     * As depth increases by one unit, price will decrease by 2102.15
 
-
-Other variables have negative impact on a customer's willingness to pay however it is very slight. 
-* table (-25.64)
-* Country of origin (base = Brazil)
-  * Cuba (-29.11)
-  * Sweden (-1.35)
-* Promotion (base = No)
-  * Yes (-6.97)
-
 ## 2c. Should they change geographical sourcing decisions?
 
-
+The impact of country of origin on price is relatively small. However, there are countries with slightly negative effects, like Cuba (-29.11) and Sweden (-1.35). Whereas, some countries have slightly positive effects, like India (+11.22), Italy (+19.39), and the Ntherlands (+16.59). Targeting regions with positive coefficients may yield better returns, however this is not a priority. 
 
 ## 2d. How should they plan for distribution in future?
 
