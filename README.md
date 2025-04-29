@@ -107,14 +107,14 @@ Yes. Certain characteristics of a diamond can have a negative impact on consumer
 
 ## 2c. Should they change geographical sourcing decisions?
 
-The impact of country of origin on price is relatively small. However, there are countries with slightly negative effects compared to Brazil, like Cuba (-29.11) and Sweden (-1.35). Whereas, some countries have slightly positive effects compared to Brazil, like India (+11.22), Italy (+19.39), and the Ntherlands (+16.59). Targeting regions with positive coefficients may yield better returns, however this is not a priority. 
+The impact of country of origin on price is relatively small. However, there are countries with slightly negative effects compared to Brazil, like Cuba (-29.11) and Sweden (-1.35). Whereas, some countries have slightly positive effects compared to Brazil, like India (+11.22), Italy (+19.39), and the Netherlands (+16.59). Targeting regions with positive coefficients may yield better returns, however this is not a priority. 
 
 ## 2d. How should they plan for distribution in future?
 
 * Optimize digital presence
   * Online Listings (+3.84) have a slight positive effect that suggests online sales do not hurt pricing.
 * Be cautious with promotions
-  * Promotional Pricing (-6.97) has a slight negative effect. Careful discounting strategies are needed to avoid undermining perceived value.
+  * Promotional Pricing (-6.97) has a slight negative effect. Careful discounting strategies are needed to avoid undermining profit.
 
 ## 2e. What is an optimal combination of carat, length (mm), width (mm), and depth (mm)?
 
