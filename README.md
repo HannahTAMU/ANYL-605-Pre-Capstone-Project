@@ -159,4 +159,28 @@ Online Listings (+3.84) have a slight positive effect.  Digital presence should 
 Color and Clarity can bring in high prices. Source these from pre-existing supply chains like Britain and the Netherlands. Analyze global diamond capacity & costs for strategic long-term sourcing.
 
 4) Focus on Cut Quality ​
-Higher grades of cut can bring high price returns for low cost. Invest in knowledgeable jewelers and technology for best yields. 
+Higher grades of cut can bring high price returns for low cost. Invest in knowledgeable jewelers and technology for best yields.
+
+## ADDITIONAL ANALYSIS - What is a realistic diamond dimension that maximizes carat size(the most important factor for sales price)?
+Determining ideal round diamond sizes
+Reference the file: Ideal_Diamond_Realistic.R
+
+![image](https://github.com/user-attachments/assets/29f5da97-7ec7-46c3-88c8-d94f58447b33)
+
+Given that most of the diamonds length and width are close to equal we can assume diamonds are typically round.
+We need to determine the ideal size of a round cut diamond.
+According to a diamond carat calculator app(Diamond Carat Calculator (Diamond Weight))
+https://www.omnicalculator.com/other/diamond-carat
+the formula for determining carat size from diamond dimensions for round cut diamonds is Diameter² × Depth × 0.0061 × (1 + GT). 
+GT(Girdle Thickness Factor) usually lies between 1% (0.01) and 3% (0.03) for round diamonds. 
+Ideal Diamond Cuts have an ideal depth percentage of 59-62.6%. This percentage is determined by dividing the diamond’s height by its width.
+(Ideal Diamond Depth and Table by Cut | The Diamond Pro)
+https://www.diamonds.pro/education/diamond-depth-and-table/.
+Checking the GT range with the carat size set to the maximum carat value of 2.35
+we can test for the diameter sizes between our minimum width(the smaller of the two diameter dimensions to capture all possibilites) that result in a 
+depth that is above the minimum depth and within the ideal depth percentage of 59-62.6%:
+![image](https://github.com/user-attachments/assets/954187f9-18b3-4cea-a654-f144851ab153)
+  
+
+
+
