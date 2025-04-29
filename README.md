@@ -179,6 +179,8 @@ https://www.diamonds.pro/education/diamond-depth-and-table/.
 Checking the GT range with the carat size set to the maximum carat value of 2.35
 we can test for the diameter sizes between our minimum width(the smaller of the two diameter dimensions to capture all possibilites) that result in a 
 depth that is above the minimum depth and within the ideal depth percentage of 59-62.6%:
+
+
 ![image](https://github.com/user-attachments/assets/954187f9-18b3-4cea-a654-f144851ab153)
   
 
