@@ -149,4 +149,14 @@ Carat = 2.357, length_mm > 7.96 mm, width_mm > 2.78 mm, depth_mm > 4.27 mm
 
 ## 2f. What specific strategies you suggest such that they can increase the sales?
 
+1) Diamond Dimensions Matter​
+Optimizing for carat, length, width, and depth can yield higher sales prices & profitable returns
 
+2) Enhance digital presence ​
+Online Listings (+3.84) have a slight positive effect.  Digital presence should utilized relative to marketing costs.
+
+3) Source High Quality Colors and Clarity​
+Color and Clarity can bring in high prices. Source these from pre-existing supply chains like Britain and the Netherlands. Analyze global diamond capacity & costs for strategic long-term sourcing.
+
+4) Focus on Cut Quality ​
+Higher grades of cut can bring high price returns for low cost. Invest in knowledgeable jewelers and technology for best yields. 
